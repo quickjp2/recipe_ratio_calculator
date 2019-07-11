@@ -1,0 +1,174 @@
+recipes:
+  crystalizing_to_bobmonium_ore:
+    inputs: { mineral_sludge: 25 }
+    outputs: { bobmonium_ore: 1 }
+    duration: 4
+    crafters: [ crystalizer ]
+  crystalizing_to_rubyte_ore:
+    inputs: { mineral_sludge: 25 }
+    outputs: { rubyte_ore: 1 }
+    duration: 4
+    crafters: [ crystalizer ]
+  crystalizing_to_stiratite_ore:
+    inputs: { mineral_sludge: 25 }
+    outputs: { stiratite_ore: 1 }
+    duration: 4
+    crafters: [ crystalizer ]
+  crystalizing_to_crotinnium_ore:
+    inputs: { mineral_sludge: 25 }
+    outputs: { crotinnium_ore: 1 }
+    duration: 4
+    crafters: [ crystalizer ]
+  crystalizing_to_saphirite_ore:
+    inputs: { mineral_sludge: 25 }
+    outputs: { saphirite_ore: 1 }
+    duration: 4
+    crafters: [ crystalizer ]
+  crystalizing_to_jivolite_ore:
+    inputs: { mineral_sludge: 25 }
+    outputs: { jivolite_ore: 1 }
+    duration: 4
+    crafters: [ crystalizer ]
+  crystalizing_mineral_catalyst:
+    inputs: { mineral_sludge: 25 }
+    outputs: { mineral_catalyst: 2 }
+    duration: 0.5
+    crafters: [ crystalizer ]
+  jivolite_ore_crushing:
+    inputs: { jivolite_ore: 2 }
+    outputs: { crushed_jivolite: 2, crushed_stone: 1 }
+    duration: 1
+    crafters: [ ore_crusher ]
+  saphirite_ore_crushing:
+    inputs: { saphirite_ore: 2 }
+    outputs: { crushed_saphirite: 2, crushed_stone: 1 }
+    duration: 1
+    crafters: [ ore_crusher ]
+  bobmonium_ore_crushing:
+    inputs: { bobmonium_ore: 2 }
+    outputs: { crushed_bobmonium: 2, crushed_stone: 1 }
+    duration: 1
+    crafters: [ ore_crusher ]
+  rubyte_ore_crushing:
+    inputs: { rubyte_ore: 2 }
+    outputs: { crushed_rubyte: 2, crushed_stone: 1 }
+    duration: 1
+    crafters: [ ore_crusher ]
+  stiratite_ore_crushing:
+    inputs: { stiratite_ore: 2 }
+    outputs: { crushed_stiratite: 2, crushed_stone: 1 }
+    duration: 1
+    crafters: [ ore_crusher ]
+  crotinnium_ore_crushing:
+    inputs: { crotinnium_ore: 2 }
+    outputs: { crushed_crotinnium: 2, crushed_stone: 1 }
+    duration: 1
+    crafters: [ ore_crusher ]
+  pure_sort_iron_ore:
+    inputs: { mineral_catalyst: 1, crushed_saphirite: 2, crushed_jivolite: 2 }
+    outputs: { iron_ore: 4 }
+    duration: 1
+    crafters: [ ore_sorting_facility ]
+  iron_ingot:
+    inputs: { iron_ore: 24 }
+    outputs: { iron_ingot: 24 }
+    duration: 4
+    crafters: [ blast_furnace_mk1 ]
+  molten_iron:
+    inputs: { iron_ingot: 12 }
+    outputs: { molten_iron: 120 }
+    duration: 4
+    crafters: [ induction_furnace_mk1 ]
+  cast_iron_plate:
+    inputs: { molten_iron: 40 }
+    outputs: { iron_plate: 4 }
+    duration: 4
+    crafters: [ casting_machine_mk1 ]
+  pure_sort_copper_ore:
+    inputs: { mineral_catalyst: 1, crushed_crotinnium: 2, crushed_stiratite: 2 }
+    outputs: { copper_ore: 4 }
+    duration: 1
+    crafters: [ ore_sorting_facility ]
+  copper_ingot:
+    inputs: { copper_ore: 24 }
+    outputs: { copper_ingot: 24 }
+    duration: 4
+    crafters: [ blast_furnace_mk1 ]
+  molten_copper:
+    inputs: { copper_ingot: 12 }
+    outputs: { molten_copper: 120 }
+    duration: 4
+    crafters: [ induction_furnace_mk1 ]
+  cast_copper_plate:
+    inputs: { molten_copper: 40 }
+    outputs: { copper_plate: 4 }
+    duration: 4
+    crafters: [ casting_machine_mk1 ]
+  pure_sort_lead_ore:
+    inputs: { mineral_catalyst: 1, crushed_crotinnium: 2, crushed_rubyte: 2 }
+    outputs: { lead_ore: 4 }
+    duration: 1
+    crafters: [ ore_sorting_facility ]
+  lead_ingot:
+    inputs: { lead_ore: 24, oxygen_gas: 60 }
+    outputs: { lead_ingot: 24, sulfur_dioxide_gas: 60 }
+    duration: 4
+    crafters: [ blast_furnace_mk1 ]
+  molten_lead:
+    inputs: { lead_ingot: 12 }
+    outputs: { molten_lead: 120 }
+    duration: 4
+    crafters: [ induction_furnace_mk1 ]
+  cast_lead_plate:
+    inputs: { molten_lead: 40 }
+    outputs: { lead_plate: 4 }
+    duration: 4
+    crafters: [ casting_machine_mk1 ]
+  pure_sort_tin_ore:
+    inputs: { mineral_catalyst: 1, crushed_bobmonium: 2, crushed_stiratite: 2 }
+    outputs: { tin_ore: 4 }
+    duration: 1
+    crafters: [ ore_sorting_facility ]
+  tin_ingot:
+    inputs: { tin_ore: 24 }
+    outputs: { tin_ingot: 24 }
+    duration: 4
+    crafters: [ blast_furnace_mk1 ]
+  molten_tin:
+    inputs: { tin_ingot: 12 }
+    outputs: { molten_tin: 120 }
+    duration: 4
+    crafters: [ induction_furnace_mk1 ]
+  cast_tin_plate:
+    inputs: { molten_tin: 40 }
+    outputs: { tin_plate: 4 }
+    duration: 4
+    crafters: [ casting_machine_mk1 ]
+  steel_ingot:
+    inputs: { iron_ingot: 24, oxygen_gas: 60 }
+    outputs: { steel_ingot: 6 }
+    duration: 4
+    crafters: [ blast_furnace_mk1 ]
+  molten_steel:
+    inputs: { steel_ingot: 12 }
+    outputs: { molten_steel: 120 }
+    duration: 4
+    crafters: [ induction_furnace_mk1 ]
+  cast_steel_plate:
+    inputs: { molten_steel: 40 }
+    outputs: { steel_plate: 4 }
+    duration: 4
+    crafters: [ casting_machine_mk1 ]
+crafters:
+  asm_mec1: 0.5
+  chem_plant_mk1: 1.75
+  liquifier: 1.5
+  filtration_unit: 1.75
+  crystalizer: 1.5
+  ore_crusher: 1.5
+  ore_sorting_facility: 0.75
+  stone_furnace: 1.0
+  blast_furnace_mk1: 1.0
+  induction_furnace_mk1: 1.0
+  casting_machine_mk1: 1.0
+  hydro_plant: 1.0

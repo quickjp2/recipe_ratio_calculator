@@ -1,0 +1,50 @@
+---
+recipes:
+  charcoal:
+    inputs: { wood_bricks: 1 }
+    outputs: { charcoal: 5 }
+    duration: 3.5
+    crafters: [ stone_furnace ]
+  charcoal_filter:
+    inputs: { charcoal: 1, filter_frame: 5 }
+    outputs: { charcoal_filter: 5 }
+    duration: 1
+    crafters: [ asm_mec1 ]
+  sulfur_dioxide_gas:
+    inputs: { oxygen_gas: 60, sulfur: 1 }
+    outputs: { sulfur_dioxide_gas: 60 }
+    duration: 2
+    crafters: [ chem_plant_mk1 ]
+  sulfuric_acid:
+    inputs: { purified_water: 40, sulfur_dioxide_gas: 90 }
+    outputs: { sulfuric_acid: 60 }
+    duration: 2
+    crafters: [ chem_plant_mk1 ]
+  slag_slurry:
+    inputs: { slag: 5, sulfuric_acid: 15 }
+    outputs: { slag_slurry: 50 }
+    duration: 3
+    crafters: [ liquifier ]
+  slag_slurry_coal_filtering:
+    inputs: { charcoal_filter: 1, slag_slurry: 50, purified_water: 50 }
+    outputs: { mineral_sludge: 50, sulfuric_waste_water: 40, filter_frame: 1 }
+    duration: 4
+    crafters: [ filtration_unit ]
+  # sulfuric_waste_water_purification:
+  #   inputs: { sulfuric_waste_water: 100 }
+  #   outputs: { sulfur: 1, mineralized_water: 20, purified_water: 70 }
+  #   duration: 1
+  #   crafters: [ hydro_plant ]
+crafters:
+  asm_mec1: 0.5
+  chem_plant_mk1: 1.75
+  liquifier: 1.5
+  filtration_unit: 1.5
+  crystalizer: 1.5
+  ore_crusher: 1.5
+  ore_sorting_facility: 0.75
+  stone_furnace: 1.0
+  blast_furnace_mk1: 1.0
+  induction_furnace_mk1: 1.0
+  casting_machine_mk1: 1.0
+  hydro_plant: 1.0
